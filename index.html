@@ -410,7 +410,7 @@
                 
                 <form class="form-footer-subscription" autocomplete="off">
                     
-                    <input type="email" name="mail" id="mail" placeholder="E-mail" class="input-subscription">
+                    <input type="email" name="mail" id="mail" placeholder="E-mail" class="input-subscription" required >
 
                     <button type="submit" class="button-subscription">
                         <span>Підписатися</span>
@@ -436,13 +436,13 @@
             </button>
 
             <form class="form" autocomplete="off">
-                <div class="form-title">
-                    <p>Залиште свої дані, ми вам передзвонимо</p>
-                </div>
+                <!-- <div class="form-title"> -->
+                    <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+                <!-- </div> -->
                 <div class="form-field">
                 <label class="form-label" for="name">Ім'я</label>
             
-                <input type="text" name="name" id="name" placeholder="" class="form-input" />
+                <input type="text" name="name" id="name" placeholder="" class="form-input" required />
                <svg class="input-icon" width="18" height="18">
                 <use href="./images/icon/sprite.svg#icon-person"></use>
                </svg>                
@@ -451,7 +451,7 @@
                 <div class="form-field">
                 <label class="form-label" for="tel">Телефон</label>
             
-                <input type="tel" name="tel" id="tel" class="form-input" />
+                <input type="tel" name="tel" id="tel" class="form-input" required />
                 <svg class="input-icon" width="18" height="18">
                     <use href="./images/icon/sprite.svg#icon-phone"></use>
                 </svg>
@@ -459,7 +459,7 @@
                 <div class="form-field">
                 <label class="form-label" for="mail">Пошта</label>
             
-                <input type="email" name="mail" id="mail" class="form-input" />
+                <input type="email" name="mail" id="mail" class="form-input" required />
                 <svg class="input-icon" width="18" height="18">
                     <use href="./images/icon/sprite.svg#icon-email"></use>
                 </svg>
@@ -476,7 +476,7 @@
 
 <label class="checkbox-label" >
   
-    <input class="checkbox" type="checkbox" name="" value="conditions"   />
+    <input class="checkbox" type="checkbox" name="" value="conditions"   required />
     
     <span class="conditions-description"> Погоджуюся з розсилкою та приймаю 
         <span><a href="" class="conditions-link">Умови договору</a></span>
